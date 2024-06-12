@@ -69,7 +69,7 @@ nav li a{
     margin: 0 20px;
 }
 
-section{
+main{
     display: flex;
     flex-direction: row;
     height: 270px;
