@@ -1,0 +1,96 @@
+/*  Font, Size, position and alignment
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --subheading-font: 'Roboto', sans-serif;
+
+    --primary-color: #181818; 
+    --secondary-color: #393939;
+    --tertiary-color: #cdcdcd; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+h2{
+    margin: 20px;
+    font-weight: 100;
+}
+
+.headerCont {
+    display: flex;
+    height: 20vh;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+nav{
+    font-family:  var(--subheading-font);
+    font-size: 1.2rem;
+    display: flex;
+    height: 10vh;
+	background-color: var(--primary-color);
+    color: white;
+
+    
+    
+    
+    
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    
+        
+}
+
+nav li a{
+    
+    margin: 0 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    height: 270px;
+}
+.mainCont{
+    /* display: flex; */
+    height: 100%;
+    width: 70vw;
+    background-color: var(--tertiary-color);
+
+}
+
+.sideCont{
+    /* display: flex; */
+    background-color: white;
+}
+
+footer{
+    
+    height: 30vh;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
