@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <meta name="author" content="Rakell Bandeira" />
+    <meta name="description" content="This html page serves as tool to practice, learn and stand points worthy for the course of WDD 131 - Dynamic Web Fundamentals for Rakell Bandeira" />
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Rakell Bandeira</title>
 </head>
 <body>
-    <h1>WDD 131 - Rakell Bandeira</h1>
+    <header>
+        <div id="headerDiv"><h1>WDD 131: Dynamic Web Fundamentals - <span id="name">Rakell Bandeira</span></h1></div>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="cardHead"><h2>About Me</h2></div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium pariatur at porro, rerum quisquam quod ratione
+                     praesentium! Voluptate exercitationem quam quas architecto 
+                     vel minus quisquam. Eos aperiam expedita voluptatibus sunt.</p>
+                <img src="images/rakellBandeiraPicturejpg.jpg" alt="Rakell Bandeira Picture">
+            </div>
+            <div>
+                <h2>Amazonas, Brazil</h2>
+                <img src="images/bandeira-do-amazonas.jpg" alt="Amazonas Flag">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis, voluptatibus minus! Iure sequi labore vel aut 
+                    inventore illum ab suscipit veritatis, saepe delectus maxime 
+                    quam voluptatibus earum in praesentium magni!</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="cardHead"><h2>Web Dev Resources</h2></div>
+            <ul>
+                <li><a>Dev.to Community</a></li>
+                <li><a>CSS Tricks</a></li>
+                <li><a>Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. Provide a blank <span> tag to do this.
+            Example
+            <span id="currentyear"></span>
+            Your name.
+            Your state or country. -->
+        <p>&copy;<span id="currentYear"></span> | Rakell da Silva Bandeira | Brazil</p>
+
+        <!-- The second paragraph has an id of "lastModified" and will be populated with JavaScript code. -->
+
+        <p id="lastModified"></p>
+    </footer>
+    
 </body>
-</html>
+</html>>
