@@ -69,7 +69,7 @@ main{
     grid-template-columns: 2fr 1fr;
     width: 960px;
 
-    border: solid 1px green;
+   
     margin: 20px auto;
 }
 
