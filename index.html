@@ -30,30 +30,42 @@
     <main>
         <section class="card">
             <div class="cardHead"><h2>About Me</h2></div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Laudantium pariatur at porro, rerum quisquam quod ratione
-                     praesentium! Voluptate exercitationem quam quas architecto 
-                     vel minus quisquam. Eos aperiam expedita voluptatibus sunt.</p>
-                <img src="images/rakellBandeiraPicturejpg.jpg" alt="Rakell Bandeira Picture">
+            <div class="cardUp">                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium pariatur at porro, rerum quisquam quod ratione
+                        praesentium! Voluptate exercitationem quam quas architecto 
+                        vel minus quisquam. Eos aperiam expedita voluptatibus sunt.</p>
+                    <img src="images/rakellBandeiraPicturejpg.jpg" alt="Rakell Bandeira Picture">
+                
             </div>
-            <div>
-                <h2>Amazonas, Brazil</h2>
-                <img src="images/bandeira-do-amazonas.jpg" alt="Amazonas Flag">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Perferendis, voluptatibus minus! Iure sequi labore vel aut 
-                    inventore illum ab suscipit veritatis, saepe delectus maxime 
-                    quam voluptatibus earum in praesentium magni!</p>
+            <div class="cardDown">
+                <div class="cardDownTitle">
+                <h2>Amazonas, Brazil</h2><hr></div>
+                <div class="cardBottom">
+                    
+                    
+                    <div>
+                        <img src="images/bandeira-do-amazonas.jpg" alt="Amazonas Flag">
+                        <figcaption>Official flag of Amazonas</figcaption>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perferendis, voluptatibus minus! Iure sequi labore vel aut 
+                        inventore illum ab suscipit veritatis, saepe delectus maxime 
+                        quam voluptatibus earum in praesentium magni!</p>
+                </div>
             </div>
         </section>
 
         <section class="card">
             <div class="cardHead"><h2>Web Dev Resources</h2></div>
-            <ul>
-                <li><a>Dev.to Community</a></li>
-                <li><a>CSS Tricks</a></li>
-                <li><a>Udemy</a></li>
-            </ul>
+            <div class="cardList">
+                <ul>
+                    <li><a href="https://www.w3schools.com/cssref/css3_pr_flex-direction.php">W3c Schools</a></li>
+                    <li><a href="https://css-tricks.com/almanac/properties/f/flex-direction/">CSS Tricks</a></li>
+                    <li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Origamid</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox">MDN Web Documents</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -63,12 +75,12 @@
             <span id="currentyear"></span>
             Your name.
             Your state or country. -->
-        <p>&copy;<span id="currentYear"></span> | Rakell da Silva Bandeira | Brazil</p>
+        <p>&copy;<span id="currentYear">202</span> | Rakell da Silva Bandeira | Brazil</p>
 
         <!-- The second paragraph has an id of "lastModified" and will be populated with JavaScript code. -->
 
-        <p id="lastModified"></p>
+        <p id="lastModified">lastModified</p>
     </footer>
     
 </body>
-</html>>
+</html>
