@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Bali Island</title>
+</head>
+<body>
+    <header>
+        <h1>Bali Island</h1>                      
+    </header>
+    
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place/bali_wide.webp" media="(min-width:1100px)">
+                <img src="images/place/bali_mobile.webp" alt="Bali Island" width="475">
+            </picture>
+        </div>
+        
+        <div class="infoBox" id="box1">
+            <div class="boxHeader">
+                <h2>Data</h2>
+            </div>            
+                    <span class="leftSide"><strong>Area:</strong></span>
+                    <span class="rightSide">587,041 sq km</span>
+                    <span class="leftSide"><strong>Population:</strong></span>
+                    <span class="rightSide">27,6910018</span>
+                    <span class="leftSide"><strong>Capital:</strong></span>
+                    <span class="rightSide">Denpasar</span>
+                    <span class="leftSide"><strong>Languages:</strong></span>
+                    <span class="rightSide">Indonesian, Balinese, and English</span>
+                    <span class="leftSide"><strong>Currencies:</strong></span>
+                    <span class="rightSide">Indonesian rupiah</span>
+                    <span class="leftSide"><strong>Time Zone:</strong></span>
+                    <span class="rightSide"> (GMT+8)</span>
+                    <span class="leftSide"><strong>Calling Code:</strong></span>
+                    <span class="rightSide">62</span>
+                    <span class="leftSide"><strong>Internet TLD:</strong></span>
+                    <span class="rightSide">.id</span>                      
+        </div>
+        <div class="infoBox" id="box2">
+            <div class="boxHeader">
+                <h2>Weather</h2>
+                <img src="images/place/weatherIcon.svg" alt="weather icon" width="15%">
+            </div>
+                    <span class="leftSide"><strong>Temperature:</strong></span>
+                    <span class="rightSide" id="temperature">75</span>
+                    <span class="leftSide"><strong>Conditions:</strong></span>
+                    <span class="rightSide">Partly CLoudy</span>
+                    <span class="leftSide"><strong>Wind:</strong></span>
+                    <span class="rightSide" id="wind">17</span>
+                    <span class="leftSide"><strong>Wind Chill:</strong></span>
+                    <span class="rightSide" id="windChill">---</span>
+                        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear">202</span> &#10059 Rakell da Silva Bandeira &#10059 Brazil</p>
+        <p id="lastModified">lastModified</p>
+
+    </footer>
+</body>
+</html>
