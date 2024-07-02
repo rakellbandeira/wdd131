@@ -110,7 +110,15 @@ const temples = [
   // Loop through the array and create "temple cards" for each temple by displaying
   // name, location, date,  total area, image, native lazy loading 
 
+  document.querySelector(".home").innerHTML = "<h2>Home | All Temples</h2>";
   createTempleCards(temples);
+
+/* let oldTemples = temples => {
+    return temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0], 10);
+        return year < 2000;
+    });
+}; */
 
   const homeLink = document.getElementById("home");
   const oldLink = document.getElementById("old");
@@ -118,12 +126,62 @@ const temples = [
   const largeLink = document.getElementById("large");
   const smallLink = document.getElementById("small");
 
+  /* EventListener to Home Button */
   homeLink.addEventListener("click", () => {
+
+    document.querySelector(".home").innerHTML = "<h2>Home | All Temples</h2>";
     createTempleCards(temples);
   })
 
+ 
+  /* EventListener to Old Button */
+  oldLink.addEventListener("click", () => {
+    let oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0], 10);
+        return year < 1900;
+    });
+
+    document.querySelector(".home").innerHTML = "<h2>Old Temples</h2>";
+    createTempleCards(oldTemples);
+    /* console.log(oldTemples); */
+  });
+
+
+  /* EventListener to New Button */
+  newLink.addEventListener("click", () => {
+    let newTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0], 10);
+        return year > 2000;
+    });
+
+    document.querySelector(".home").innerHTML = "<h2>New Temples</h2>";
+    createTempleCards(newTemples);
+/*     console.log(newTemples);
+ */  });
+
+
+  /* EventListener to Large Button */
+  largeLink.addEventListener("click", () => {
+    let largeTemples = temples.filter(temple => temple.area > 90000);
+    
+    document.querySelector(".home").innerHTML = "<h2>Large Temples</h2>";
+    createTempleCards(largeTemples);
+/*     console.log(largeTemples);
+ */  });
+
+
+  /* EventListener to Large Button */
+  smallLink.addEventListener("click", () => {
+    let smallTemples = temples.filter(temple => temple.area < 10000);
+    
+    document.querySelector(".home").innerHTML = "<h2>Small Temples</h2>";
+    createTempleCards(smallTemples);
+    console.log(smallTemples);
+  });
+
+
   function createTempleCards(templearray) {
-    document.querySelector(".home").innerHTML = "<h2>Home</h2>";
+    
 
     templearray.forEach(temple => {
         let card = document.createElement("section");
@@ -149,10 +207,6 @@ const temples = [
         card.appendChild(img);
 
         document.querySelector(".home").appendChild(card);
-
-
-
-
 
     });
   }
