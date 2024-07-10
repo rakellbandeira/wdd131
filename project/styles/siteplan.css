@@ -468,7 +468,52 @@ main{
     }
 
 
+.vertical{
+    flex-direction: column;
+    
+    display: flex;
+    width: 100%;
+}
 
+.vertical h2{
+    width: 75%;
+    padding: 40px;
+    margin: auto;
+
+}
+
+.wireframe {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.wireframe img{
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+#clear{
+    
+        width:87%;
+        height: auto;
+        border: solid 1px var(--highlight-color);
+
+        padding: 40px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.5rem;
+
+        border-radius: 10px;
+}
 
         
 
