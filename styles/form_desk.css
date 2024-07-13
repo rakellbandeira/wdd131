@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{        
+    --primary-color: #411079; 
+    --secondary-color: #22334e;
+    --font-size:12px;
+
+    --main-font: "Nunito", sans-serif;
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+@media only screen and (min-width: 820px) {
+/* styles for browsers larger than 820px */
+    
+    header{
+        display: flex;
+        justify-content: center;
+
+        background-color: var(--primary-color);
+        color: white;
+        
+
+        padding: 20px;
+    }
+
+    .revForm fieldset{
+        margin: .1rem auto;
+        border: none;
+        background-color: #f6f2f8;
+        /* border: 1px solid #ddd; */
+        border-radius: 6px;
+        padding: .5rem 2%;
+
+        width: 100%;
+        max-width: 290px;
+        min-height: 100px;
+
+        display: block;
+        justify-items: center;
+    }
+
+    .revForm legend{
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+        font-weight: bold;
+        
+        padding: 5px;
+        margin: 15px;
+        top: 25px;
+        position: relative;
+    }
+
+    .revForm select{
+        display: flex;
+        
+        
+        margin:10px auto;
+        width: 90%;
+        height: 2rem;
+        padding-left: 25px;
+
+        background-color: white;
+        border: solid .5px #ddd;
+
+    }
+
+    .selectOption {
+        padding-left: 25px;
+
+    }
+
+    .revForm label {
+        display: block;
+        padding: .5rem;
+        font-size: .9rem;
+
+        margin-left: 10px;
+    }
+
+    #textArea{
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+        width: 85%;
+        height: 75px;
+
+        border: solid .5px #ddd;
+
+    }
+
+    #instDate{
+        width: 90%;
+        
+        border: solid .5px #ddd;
+
+        padding: 5px;
+    }
+
+    #nameArea{
+        width: 95%;
+        height: 30px;
+
+        border: solid .5px #ddd;
+    }
+
+
+    .revForm input[type="submit"]{
+        border: none;
+        background-color: var(--secondary-color);
+        color: white;
+        border-radius: 6px;
+        padding: .8rem;
+        width: 96%;
+        max-width: 400px;
+        
+    }
+
+    .multiple{
+        margin-right: 10px;
+
+
+    }
+
+    #submit{
+        width: 350px;
+        margin: 2rem auto 3rem;
+        display: block;
+        justify-items: center;
+
+        font-size: 1.2rem;
+        background-color: var(--primary-color);
+
+    }
+
+
+    footer{
+        background-color: var(--secondary-color);
+        color: white;
+        height: 50px;
+        padding: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        font-size: 1.1rem;
+    }
+    
+    footer p{
+        margin:3px;
+    }
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form_mobile.css">
+    <link rel="stylesheet" href="styles/form_desk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="revForm">
+            <fieldset>
+                <legend>Product Name: </legend>
+                <select name="productName" id="produName" required>
+                        <option value="" class="selectOption" selected>Select a Product</option>
+                        
+                        <!--The remaining options are created dynamically using a provided product array.
+                            Each option must have a value attribute that is the product name. -->
+                    
+                </select>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating:*</legend>
+                <label><input type="radio" name="starRating" id="oneStar" required>&starf;</label>
+                <label><input type="radio" name="starRating" id="twoStar" required>&starf;&starf;</label>
+                <label><input type="radio" name="starRating" id="threeStar" required>&starf;&starf;&starf;</label>
+                <label><input type="radio" name="starRating" id="fourStar" required>&starf;&starf;&starf;&starf;</label>
+                <label><input type="radio" name="starRating" id="fiveStar" required>&starf;&starf;&starf;&starf;&starf;</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Instalation:*</legend>
+                <label><input type="date" name="installDate" id="instDate" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful features you found:</legend>
+                <label><input type="checkbox" class="multiple" name="durability" id="durab" value="yes">Durability</label>
+                <label><input type="checkbox" class="multiple" name="ease" id="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" class="multiple" name="perform" id="perform" value="yes">Performance</label>
+                <label><input type="checkbox" class="multiple" name="design" id="design" value="yes">Design</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review <span>(optional)</span></legend>
+                <textarea id="textArea" name="textArea"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Your Name <span>(optional)</span></legend>
+                <label><input type="text" name="name" id="nameArea"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear">202</span> &#10059; Rakell da Silva Bandeira &#10059; Brazil</p>
+        <p id="lastModified">lastModified</p>
+    
+    </footer>
+</body>
+</html>
