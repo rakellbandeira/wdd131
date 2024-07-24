@@ -310,7 +310,7 @@ main{
 
         .primar-text{
             color: var(--primary-color);
-            font-size: 1.2rem;
+            font-size: 1.9rem;
         }
 
         /*  */
@@ -331,6 +331,8 @@ main{
             color: #cd7305;
             font-size: 1.3rem;
         }
+
+        
 
         /*  */
 
@@ -353,15 +355,19 @@ main{
 
         .primary-text{
             color: var(--primary-color);
-            font-size: 3rem;
+            font-size: 4rem;
         }
         .seconda-text{
             color: #ccc8bf;
-            font-size: 1.8rem;
+            font-size: 2.5rem;
         }
+        .tertiary-text{
+            font-size: 1.5rem;
+        }
+
         .body-text{
             color:   black;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         .highli-text{
             color:   #cd7305;
@@ -371,10 +377,6 @@ main{
         #box4 div{
             display: flex;
             flex-direction: row;
-        }
-
-        .buttonarea{
-
         }
 
         .button1{

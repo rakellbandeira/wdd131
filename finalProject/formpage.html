@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+
+    <!-- fonts -->
+
+    <title>Beamer | Sell more now!</title>
+</head>
+<body>
+    <header>
+        <div><img src="images/logo/beamer_white_Logo.png" alt="Beamer logo" loading="lazy" width="300"></div>
+        <button id="buttonMenu"></button>
+        <nav>
+            <a href="#" title="Home" id="home"></a>
+            <a href="#portfolio" title="Portfolio" id="portf"></a>
+            <a href="#points" title="Why" id="why"></a>
+            <!-- Search Bar -->
+<!--             <input type="search" id="search" onkeyup="mySearch()" placeholder="Search" title="Type in what you want to find" aria-label="search" />
+ -->    
+        </nav>
+
+    </header>
+
+        <main>
+
+            <section class="hero col2">
+                <div class="path">
+                    <p><a href="index.html">Home </a>| <a href="#">Form page </a></p>
+                </div>
+                <div class="heroleft">
+                    <div id="heroTexth1">
+                        <h1>If design excels, the website sells.</h1>
+                        <img src="styles/hero/6.png" alt="Image of website building" loading="lazy" id="img1">
+                        <img src="images/hero/coins2.png" alt="Image of gold coins" loading="lazy" id="img2">
+                    </div>
+                </div>
+            
+                <div class="heroText">
+                    <div id="heroForm">
+                        <form method="get" action="answer.html" class="lilform">
+                            <div id="formTitle"><h3>Let's get you a pre-quotation!</h3></div>
+                            <fieldset class="webtype">
+                                <legend>What's your Website type?*</legend>
+                                <select name="webtype" required>
+                                    <option value="" class="selectOption" selected>Select main type:</option>
+                                    <option value="landing" class="selectOption">Landing Page</option>
+                                    <option value="multiple" class="selectOption">Multiple Pages</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="webtype">
+                                <legend>Tell us your Website purpose:*</legend>
+                                <select name="webpurpose" required>
+                                    <option value="" class="selectOption" selected>Select main functionality:</option>
+                                    <option value="showcase" class="selectOption">Showcase product/service</option>
+                                    <option value="sell" class="selectOption">Sell product/service online</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset class="webopt">
+                                <legend>The functionalities you need:*</legend>
+                                <label><input type="radio" name="form" id="form" required>Contact Form</label>
+                                <label><input type="radio" name="ecommerce" id="ecommerce" required>E-commerce Integration</label>
+                                <label><input type="radio" name="blog" id="blog" required>Blog or News Section</label>
+                                <label><input type="radio" name="responsive" id="responsive" required>Responsive Design</label>
+                                <label><input type="radio" name="seo" id="seo" required>Search Engine Optimization (SEO)</label>
+                            </fieldset>
+
+                            <fieldset class="webopt">
+                                <legend>Deadline for delivery:*</legend>
+                                <label><input type="date" name="DeadlineDate" id="deadDate" required></label>
+                            </fieldset>
+
+                            <fieldset class="webopt">
+                                <legend>Any other relevant info: <span>(optional)</span></legend>
+                                <textarea id="textArea" name="textArea"></textarea>
+                            </fieldset>
+
+                            <fieldset class="webopt">
+                                <legend>Your company name: <span>(optional)</span></legend>
+                                <label><input type="text" name="nome" id="emailArea"></label>
+                            </fieldset>
+                            
+                            <fieldset class="webopt">
+                                <legend>Your email: *</legend>
+                                <label><input type="email" name="email" id="emailArea"></label>
+                            </fieldset>
+
+                            <input type="submit" value="Tailor my quotation" class="quoteButton">
+    
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+            <div class="row1">
+                <div class="row1Title"><h1>Now your project is on a good start!</h1></div>
+                
+                <!-- <form method="get" action="formpage.html" class="footerForm" >
+                    <fieldset>
+                        <label><input type="email" name="email" placeholder="Your best email here"></label>
+                        <input type="submit" value="Request a personalized quote">
+                    </fieldset>
+                </form> -->
+            </div>
+            <div class="row2">
+                <div class="colleft">
+                    <div id="socialMedia">
+                        <a href="#"><img src="images/socialmediaIcons/instagram.png" alt="Instagram icon"></a>
+                        <a href="#"><img src="images/socialmediaIcons/facebook.png" alt="Facebook icon"></a>
+                        <a href="#"><img src="images/socialmediaIcons/linkedin.png" alt="LinkedIn icon"></a>
+                        <a href="#"><img src="images/socialmediaIcons/email.png" alt="Email icon"></a>
+                    </div>
+                </div>
+                
+                <div class="colright">
+                    <div id="copyright">
+                        <p>&copy; 2024 Beamer Inc. &#183; <a href="#">Privacy</a> &#183; <a href="#">Terms</a></p>
+                    </div>
+                </div>
+                
+            </div>
+    </footer>
+</body>
+
+</html>
