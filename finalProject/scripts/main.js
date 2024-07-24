@@ -9,7 +9,7 @@ hamButton.addEventListener('click', () => {
 
 
 
-
+/* 
 const repeat = false;
 const noArrows = false;
 const noBullets = false;
@@ -235,7 +235,45 @@ function goToIndexSlide(index) {
     }
 }
 
-slideInitial();
+slideInitial(); */
+
+/* new snippet */
+
+const container = document.querySelector('.slider-container');
+const slide = document.querySelectorAll('.slider-single');
+const slideTotal = slide.length - 1;
+let slideCurrent = -1;
+
+document.querySelector('.slider-right').addEventListener('click', () => slideRight());
+document.querySelector('.slider-left').addEventListener('click', () => slideLeft());
+
+function slideRight() {
+    if (slideCurrent < slideTotal) {
+        slideCurrent++;
+    } else {
+        slideCurrent = 0;
+    }
+    updateSlide();
+}
+
+function slideLeft() {
+    if (slideCurrent > 0) {
+        slideCurrent--;
+    } else {
+        slideCurrent = slideTotal;
+    }
+    updateSlide();
+}
+
+function updateSlide() {
+    const offset = -slideCurrent * 100;
+    document.querySelector('.slider-content').style.transform = `translateX(${offset}%)`;
+}
+
+// Initialize first slide
+slideRight();
+
+
 
 /* accordion function */
 document.addEventListener('DOMContentLoaded', function () {
