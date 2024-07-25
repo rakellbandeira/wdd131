@@ -234,7 +234,7 @@ a {
 
 #heroForm{
 
-    width: 450px;
+    width: 370px;
     background-color: rgba(255,255,255,0.6);
     box-shadow: rgba(10, 10, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 15px;
@@ -252,7 +252,7 @@ a {
 .lilform {
   display: grid;
 
-  width: 400px;
+  width: 100%;
 
   
 }
@@ -262,7 +262,7 @@ a {
     margin: var(--text-subheadings-margin);
     margin-top: 20px;
 
-    width: 400px;
+    width: 80%;
 }
 
 .webtype{
@@ -275,7 +275,7 @@ a {
 
 
     height: 90px;
-    width: 400px;
+    width: 100%;
 
 
 }
@@ -287,9 +287,9 @@ a {
 
   border-radius: 15px;
 
-
+  
   height: auto;
-  width: 380px;
+  width: 330px;
 
 
   margin: 0px;
@@ -796,6 +796,150 @@ fieldset{
     text-decoration: none;
 }
 
+.path{
+    display: block;
+    grid-column: 1/3;
+
+    margin-left: 130px;
+    padding-top: 50px;
+    color: white;
+
+    font-size: var(--text-base-size);
+  }
+
+  .path a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .path a:hover{
+    color: var(--secondary-color);
+  }
+
+  .path a:active{
+    color: var(--darkbackground);
+
+  }
+
+  
+  .heroanswer{
+    grid-column: 1/3;
+    align-content:start;
+
+    justify-self: center;
+
+    color: white;
+    padding: 35px;
+    width: 100%;
+
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
+  .heroText{
+     margin: 0 auto;
+      color: white;
+      padding: 35px;
+      padding-top: 0px;
+      width: 100%;
+  }
+
+  #heroTexth1{
+      font-size: var(--text-headings-size);
+      
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+      margin-bottom: 100px;
+  }
+
+  #heroTexth1 h1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    margin-bottom: 1rem;
+  }
+
+  #img1{
+    grid-column: 1/2;
+    width: 100%;
+    grid-row: 2/3;
+  }
+
+  #img2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+  }
+
+  #heroTexth2{
+    font-size: var(--text-headings-size);
+    
+
+    display: grid;
+    grid-row: 1fr 1fr;
+  }
+
+  #heroTexth2 img{
+  width: 300px;
+  }
+
+  #thankmsg{
+    font-size: var(--text-base-size);
+    margin: var(--text-base-margin);
+  }
+
+  .hero2{
+    
+    height: 500px;
+
+    background: linear-gradient(180deg, rgba(32,37,57,1) 0%, rgba(60,66,98,1) 62%, rgba(51,56,79,1) 85%);
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #heroTexthh1{
+    grid-column: 1/2;
+
+    font-size: var(--text-headings-size);
+    
+
+    display: grid;
+    grid-row: 1fr 1fr;
+  }
+
+  #heroTexth2{
+    grid-column: 2/3;
+  }
+
+  #heroTexthh1 h1{
+    
+    width: 90%;
+  }
+
+
+  #heroTexth2 img{
+    grid-row: 2/3;
+    width: 300px;
+
+    padding: 20px;
+    height: auto;
+
+    display: grid;
+
+    margin: auto auto 0px 0px;
+
+    
+  }
+
+
 }
 
 
@@ -991,7 +1135,7 @@ fieldset{
   
       color: white;
       padding: 35px;
-      width: 1200px;
+      width: 100%;
   
       
       display: grid;
@@ -1102,7 +1246,7 @@ fieldset{
   
     #heroForm{
   
-        width: 550px;
+        width: 370px;
         background-color: rgba(255,255,255,0.8);
         box-shadow: rgba(10, 10, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         border-radius: 15px;
@@ -1654,11 +1798,13 @@ fieldset{
         color: white;
         text-decoration: none;
     }
+
+
     
     }
 
 
-    }
+    
 
 
 
