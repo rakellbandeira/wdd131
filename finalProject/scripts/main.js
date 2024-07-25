@@ -287,3 +287,43 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Saving the form in Local Storage
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.lilform');
+    const companyNameInput = document.querySelector('input[name="companyName"]');
+    const webTypeSelect = document.querySelector('select[name="webtype"]');
+    const webPurposeSelect = document.querySelector('select[name="webpurpose"]');
+    const deadlineDateInput = document.querySelector('input[name="DeadlineDate"]');
+    const textArea = document.querySelector('textarea[name="textArea"]');
+    const emailInput = document.querySelector('input[name="email"]');
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const companyName = companyNameInput.value.trim();
+
+        if (companyName) {
+            let companies = JSON.parse(localStorage.getItem('companies')) || [];
+            if (companies.includes(companyName)) {
+                companies = companies.filter(name => name !== companyName);
+            } else {
+                companies.push(companyName);
+            }
+            localStorage.setItem('companies', JSON.stringify(companies));
+        }
+
+        
+        companyNameInput.value = '';
+        webTypeSelect.selectedIndex = 0;
+        webPurposeSelect.selectedIndex = 0;
+        deadlineDateInput.value = '';
+        textArea.value = '';
+        emailInput.value = '';
+        radioButtons.forEach(radio => radio.checked = false);
+
+        form.submit();
+    });
+});
